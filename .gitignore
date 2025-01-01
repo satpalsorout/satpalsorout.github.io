@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+build/
+npm-debug.log
+
+# .env file
+.env
+
+# Mac system files
+.DS_Store
+
+# Log files
+*.log
