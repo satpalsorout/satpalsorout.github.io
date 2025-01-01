@@ -32,10 +32,15 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Optional: Add CNAME file if using a custom domain
+      - name: Add CNAME for custom domain
+        if: github.event_name == 'push'  # Only on push events
+        run: echo "www.yourdomain.com" > ./build/CNAME
+
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./build
