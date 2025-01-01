@@ -18,6 +18,10 @@ const Home = (props) => {
   const handleLinkedIn = () => {
     window.open('https://www.linkedin.com/in/satpal-sorout-99348775', '_blank')
   }
+  const downloadResume = () => {
+    window.open('../../docs/Resume.docx', '_blank')
+  }
+
   return (
     <div className="home-container">
       <Helmet>
@@ -97,7 +101,7 @@ const Home = (props) => {
       <Hero17
         action1={
           <Fragment>
-            <span className="home-text115">Download Resume</span>
+            <span className="home-text115" onClick={downloadResume}>Download Resume</span>
           </Fragment>
         }
         heading1={
