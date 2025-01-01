@@ -30,11 +30,7 @@ const Home = (props) => {
             <span className="home-text100">Get in touch with me</span>
           </Fragment>
         }
-        action1={
-          <Fragment>
-            <span className="home-text101">Resume</span>
-          </Fragment>
-        }
+        
         link2={
           <Fragment>
             <span className="home-text102">Experience</span>
@@ -99,14 +95,9 @@ const Home = (props) => {
         }
       ></Navbar8>
       <Hero17
-        action2={
-          <Fragment>
-            <span className="home-text114">Secondary action</span>
-          </Fragment>
-        }
         action1={
           <Fragment>
-            <span className="home-text115">Main action</span>
+            <span className="home-text115">Download Resume</span>
           </Fragment>
         }
         heading1={
@@ -383,15 +374,14 @@ const Home = (props) => {
         step1Description={
           <Fragment>
             <span className="home-text186">
-              Master of Computer Applications (MCA) from Guru Gobind Singh
-              Indraprastha University, Delhi
+              Master of Computer Applications (MCA) from Maharshi Dayanand University, Rohtak, Haryana, India
             </span>
           </Fragment>
         }
         step3Description={
           <Fragment>
             <span className="home-text187">
-              Proficient in Java, JavaScript, React, Node.js, MongoDB, and Agile
+              Proficient .Net, JavaScript, React, Node.js, MongoDB, and Agile
               methodologies
             </span>
           </Fragment>
@@ -404,7 +394,7 @@ const Home = (props) => {
         step2Description={
           <Fragment>
             <span className="home-text189">
-              Over 10 years of experience in software development and project
+              Over 14 years of experience in software development and project
               management
             </span>
           </Fragment>
@@ -422,9 +412,9 @@ const Home = (props) => {
         step4Description={
           <Fragment>
             <span className="home-text192">
-              Certified Scrum Master (CSM) and AWS Certified Developer -
-              Associate
-            </span>
+  Certified Microsoft Certified Developer - Associate<br/>
+  Microsoft Certified: Azure Solutions Architect Expert
+</span>
           </Fragment>
         }
         step4Title={
@@ -433,98 +423,7 @@ const Home = (props) => {
           </Fragment>
         }
       ></Steps2>
-      <Testimonial17
-        author2Position={
-          <Fragment>
-            <span className="home-text194">Tech Lead</span>
-          </Fragment>
-        }
-        author1Position={
-          <Fragment>
-            <span className="home-text195">Software Engineer</span>
-          </Fragment>
-        }
-        author1Name={
-          <Fragment>
-            <span className="home-text196">John Doe</span>
-          </Fragment>
-        }
-        author3Name={
-          <Fragment>
-            <span className="home-text197">Michael Johnson</span>
-          </Fragment>
-        }
-        review2={
-          <Fragment>
-            <span className="home-text198">
-              Working with Satpal was a pleasure. He is a great team player and
-              has a deep understanding of software architecture. I highly
-              recommend him for any project.
-            </span>
-          </Fragment>
-        }
-        author2Name={
-          <Fragment>
-            <span className="home-text199">Jane Smith</span>
-          </Fragment>
-        }
-        author4Position={
-          <Fragment>
-            <span className="home-text200">UI/UX Designer</span>
-          </Fragment>
-        }
-        author4Name={
-          <Fragment>
-            <span className="home-text201">Emily Brown</span>
-          </Fragment>
-        }
-        content1={
-          <Fragment>
-            <span className="home-text202">
-              Satpal is an exceptional developer with a keen eye for detail. His
-              problem-solving skills are top-notch, and he always delivers
-              high-quality work on time.
-            </span>
-          </Fragment>
-        }
-        author3Position={
-          <Fragment>
-            <span className="home-text203">Product Manager</span>
-          </Fragment>
-        }
-        review1={
-          <Fragment>
-            <span className="home-text204">
-              Satpal helped us streamline our development process and improve
-              overall efficiency. His expertise in React and JavaScript was
-              invaluable to our team.
-            </span>
-          </Fragment>
-        }
-        heading1={
-          <Fragment>
-            <span className="home-text205">Testimonials</span>
-          </Fragment>
-        }
-        review3={
-          <Fragment>
-            <span className="home-text206">
-              Satpal&apos;s dedication to his work is truly inspiring. He goes
-              above and beyond to ensure that the project meets all requirements
-              and exceeds expectations.
-            </span>
-          </Fragment>
-        }
-        review4={
-          <Fragment>
-            <span className="home-text207">
-              Satpal&apos;s attention to detail is unmatched. He has a creative
-              approach to problem-solving and always brings fresh ideas to the
-              table. It was a pleasure collaborating with him.
-            </span>
-          </Fragment>
-        }
-      ></Testimonial17>
+   
       <Contact10
         content1={
           <Fragment>
@@ -585,7 +484,7 @@ const Home = (props) => {
         }
         termsLink={
           <Fragment>
-            <span className="home-text217">/terms</span>
+            <span className="home-text217">terms</span>
           </Fragment>
         }
         link2={
@@ -600,12 +499,12 @@ const Home = (props) => {
         }
         cookiesLink={
           <Fragment>
-            <span className="home-text220">/cookies</span>
+            <span className="home-text220">cookies</span>
           </Fragment>
         }
         privacyLink={
           <Fragment>
-            <span className="home-text221">/privacy</span>
+            <span className="home-text221">privacy</span>
           </Fragment>
         }
       ></Footer4>

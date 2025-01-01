@@ -9,22 +9,7 @@ const Steps2 = (props) => {
     <div className="steps2-container1 thq-section-padding">
       <div className="steps2-max-width thq-section-max-width">
         <div className="steps2-container2 thq-grid-2">
-          <div className="steps2-section-header">
-            <h2 className="thq-heading-2">
-              Discover the Power of Our Products
-            </h2>
-            <p className="thq-body-large">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat.
-            </p>
-            <div className="steps2-actions">
-              <button className="thq-button-animated thq-button-filled steps2-button">
-                <span className="thq-body-small">Main action</span>
-              </button>
-            </div>
-          </div>
+        
           <div className="steps2-container3">
             <div className="steps2-container4 thq-card">
               <h2 className="thq-heading-2">
@@ -98,9 +83,9 @@ const Steps2 = (props) => {
                 {props.step4Description ?? (
                   <Fragment>
                     <span className="steps2-text31">
-                      Certified Scrum Master (CSM) and AWS Certified Developer -
-                      Associate
-                    </span>
+  Certified Scrum Master (CSM) and AWS Certified Developer - Associate<br/>
+  Microsoft Certified: Azure Solutions Architect Expert
+</span>
                   </Fragment>
                 )}
               </span>

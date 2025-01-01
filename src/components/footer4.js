@@ -16,68 +16,7 @@ const Footer4 = (props) => {
               className="footer4-logo2"
             />
           </div>
-          <div className="footer4-links">
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
-              {props.link1 ?? (
-                <Fragment>
-                  <span className="footer4-text16">Home</span>
-                </Fragment>
-              )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
-              {props.link2 ?? (
-                <Fragment>
-                  <span className="footer4-text18">About</span>
-                </Fragment>
-              )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
-              {props.link3 ?? (
-                <Fragment>
-                  <span className="footer4-text15">Services</span>
-                </Fragment>
-              )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
-              {props.link4 ?? (
-                <Fragment>
-                  <span className="footer4-text19">Contact</span>
-                </Fragment>
-              )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
-              {props.link5 ?? (
-                <Fragment>
-                  <span className="footer4-text14">Portfolio</span>
-                </Fragment>
-              )}
-            </a>
-          </div>
+        
         </div>
         <div className="footer4-credits">
           <div className="thq-divider-horizontal"></div>
@@ -89,21 +28,21 @@ const Footer4 = (props) => {
               <span className="footer4-text11 thq-body-small">
                 {props.privacyLink ?? (
                   <Fragment>
-                    <span className="footer4-text21">/privacy</span>
+                    <span className="footer4-text21">privacy</span>
                   </Fragment>
                 )}
               </span>
               <span className="thq-body-small">
                 {props.termsLink ?? (
                   <Fragment>
-                    <span className="footer4-text17">/terms</span>
+                    <span className="footer4-text17">terms</span>
                   </Fragment>
                 )}
               </span>
               <span className="thq-body-small">
                 {props.cookiesLink ?? (
                   <Fragment>
-                    <span className="footer4-text20">/cookies</span>
+                    <span className="footer4-text20">cookies</span>
                   </Fragment>
                 )}
               </span>

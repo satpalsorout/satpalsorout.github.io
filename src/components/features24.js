@@ -9,29 +9,7 @@ const Features24 = (props) => {
   return (
     <div className="thq-section-padding">
       <div className="features24-container2 thq-section-max-width">
-        <div className="features24-image-container">
-          {activeTab === 0 && (
-            <img
-              alt={props.feature1ImgAlt}
-              src={props.feature1ImgSrc}
-              className="features24-image1 thq-img-ratio-16-9"
-            />
-          )}
-          {activeTab === 1 && (
-            <img
-              alt={props.feature2ImgAlt}
-              src={props.feature2ImgSrc}
-              className="features24-image2 thq-img-ratio-16-9"
-            />
-          )}
-          {activeTab === 2 && (
-            <img
-              alt={props.feature3ImgAlt}
-              src={props.feature3ImgSrc}
-              className="features24-image3 thq-img-ratio-16-9"
-            />
-          )}
-        </div>
+       
         <div className="features24-tabs-menu">
           <div
             onClick={() => setActiveTab(0)}

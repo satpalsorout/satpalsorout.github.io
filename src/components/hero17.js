@@ -39,15 +39,7 @@ const Hero17 = (props) => {
               )}
             </span>
           </button>
-          <button className="thq-button-outline hero17-button2">
-            <span className="thq-body-small">
-              {props.action2 ?? (
-                <Fragment>
-                  <span className="hero17-text5">Secondary action</span>
-                </Fragment>
-              )}
-            </span>
-          </button>
+         
         </div>
       </div>
       <div>
