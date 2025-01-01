@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Use the correct version of Node.js
+          node-version: '18'
 
       # Install dependencies
       - name: Install dependencies
@@ -26,13 +26,6 @@ jobs:
       # Build the React app
       - name: Build the app
         run: npm run build
-
-      # Fix paths for GitHub Pages
-      - name: Adjust paths for GitHub Pages
-        run: |
-          echo "Fixing paths in index.html"
-          sed -i 's|/static|./static|g' build/index.html
-
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
