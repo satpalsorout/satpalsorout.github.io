@@ -4,15 +4,10 @@ on:
   push:
     branches:
       - main  # Trigger on pushes to the main branch
-  pull_request:
-    branches:
-      - main  # Trigger on pull requests targeting the main branch
 
 jobs:
-  build:
-    timeout-minutes: 120 
+  build-deploy:
     runs-on: ubuntu-latest
-
     steps:
       # Checkout the repository
       - name: Checkout code
@@ -22,19 +17,26 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Specify your app's Node.js version
+          node-version: '18'  # Use the correct version of Node.js
 
       # Install dependencies
       - name: Install dependencies
         run: npm install
 
       # Build the React app
-      - name: Build
+      - name: Build the app
         run: npm run build
+
+      # Fix paths for GitHub Pages
+      - name: Adjust paths for GitHub Pages
+        run: |
+          echo "Fixing paths in index.html"
+          sed -i 's|/static|./static|g' build/index.html
+
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/
+          publish_dir: build
