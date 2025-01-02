@@ -18,7 +18,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
+          
+       # Add custom domain to CNAME file
+      - name: Configure custom domain
+        run: echo "www.satpalsorout.com" > build/CNAME
+        
       # Install dependencies
       - name: Install dependencies
         run: npm install
